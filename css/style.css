@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+:root {
+    --textMenu: black;
+    --bgcolor: #cff5e5;
+    
+    --status: #59c28c;
+
+    --people: #32c586;
+    --bgpeople: #e0fcf0d0;
+
+    --files:#2B82CA;
+    --bgfiles:#e3f1fe;
+
+    --channels:#613AD1;
+    --bgchannels:#e0d7fa;
+
+    --text: #b4b4b4;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    color: black;
+    background-color: var(--bgcolor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#buscador{
+    border-radius: 10px;
+    padding: 12px;
+    border: solid 1px #32c586;
+    width: 600px;
+}
+
+
+.card-body{
+    margin-top: 10px;
+    padding: 5px;
+    background: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px  #d4d4d4ba;
+    transition: all .5s;
+}
+
+.section{
+    padding: .5em;
+    display: inline;
+    justify-content: space-between;
+}
+
+.filter{
+    display: flex;
+    justify-content: center;
+}
+
+.btn{
+    color: #494949;
+    background-color: transparent;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 10px;
+    border: 1px solid var(--text);
+    font-size: 15px;
+}
+
+.p:hover{
+    color: var(--people);
+    background-color: var(--bgpeople);
+}
+
+.f:hover{
+    color: var(--files);
+    background-color: var(--bgfiles);
+}
+
+.c:hover{
+    color: var(--channels);
+    background-color: var(--bgchannels);
+}
+
+h3{
+    margin-left: 15px;
+    font-size: 14px;
+    color: var(--text);
+}
+
+.cir{
+    font-size: 5px;
+    color: #b4b4b4;
+    justify-content: center;
+}
+
+.card-people{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.card-people i{
+    padding: 0 5px;
+}
+
+.edo{
+    font-size: 15px;
+}
+
