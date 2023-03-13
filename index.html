@@ -24,67 +24,58 @@
 
       <!-- Contenedor -->
       <div class="card-body">
-        <!-- Botones -->
-        <div class="filter section">
-          <button id="people" class="btn p">
+        <div class="section filtros">
+          <button class="btn p">
             <i class="fas fa-user-friends"></i> People
           </button>
 
-          <button id="files" class="btn f">
-            <i class="fas fa-file-alt"></i> Files
-          </button>
+          <button class="btn f"><i class="fas fa-file-alt"></i> Files</button>
 
-          <button id="channels" class="btn c">
+          <button class="btn c">
             <i class="fa-solid fa-circle-nodes"></i> Channels
           </button>
         </div>
-        <!-- People -->
-        <div class="section">
+
+        <div class="section people">
           <h3>People</h3>
-          <div class="card-people">
+          <table>
+            <tbody id="people"></tbody>
+          </table>
+        </div>
+
+        <!-- <div class="card-people">
             <i class="fa-solid fa-user"></i>
             <p>Olivia Niaos Jaknma</p>
             <i class="icon fa-solid fa-circle"></i>
             <span class="edo">Active Now</span>
-          </div>
-        </div>
-        <hr size="8px" color="black" />
-        <!-- Files -->
-        <div class="section">
+          </div> -->
+
+        <div class="section files">
           <h3>Files</h3>
           <table>
-            <tr>
-              <td>Olivia</td>
-              <td>Actvio</td>
-            </tr>
-            <tr>
-              <td>Olivia</td>
-              <td>Actvio</td>
-            </tr>
-            <tr>
-              <td>Olivia</td>
-              <td>Actvio</td>
-            </tr>
+            <tbody id="files"></tbody>
           </table>
         </div>
-        <hr size="4px" color="black" />
-        <!-- Channels -->
-        <div class="section">
+
+        <div class="section canal">
           <h3>Channels</h3>
-          <div class="card-channels">
-            <i class="fa-thin fa-hashtag"></i>
-            App Chemistry
-            <i class="icon fa-solid fa-circle"></i>
-            12 members<p></p>
-            <i class="fa-thin fa-hashtag"></i>
-            Design Thinking 101
-            <i class="icon fa-solid fa-circle"></i>
-            24 members<p></p>
+            <div class="card-channels">
+              <i class="fa-thin fa-hashtag"></i>
+              App Chemistry
+              <i class="icon fa-solid fa-circle"></i>
+              12 members<p></p>
+              <i class="fa-thin fa-hashtag"></i>
+              Design Thinking 101
+              <i class="icon fa-solid fa-circle"></i>
+              24 members<p></p>
+              <table>
+                <tbody id="channels"></tbody>
+              </table>
           </div>
-        </div>
       </div>
     </div>
 
     <script src="/js/script.js"></script>
+    <script src="/js/Api.js"></script>
   </body>
 </html>
