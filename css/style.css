@@ -64,11 +64,10 @@ body {
     padding: .5em;
     display: inline;
     justify-content: space-between;
+    border-bottom: #b4b4b4 solid1 1px;
 }
 
-
-
-.filter{
+.filtros{
     display: flex;
     justify-content: center;
 }
