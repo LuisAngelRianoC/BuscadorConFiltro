@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Buscador</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card-head">
+        <input id="buscador" type="text" placeholder="Start Searching..." />
+      </div>
+
+      <!-- Contenedor -->
+      <div class="card-body">
+        <div class="section filtros">
+          <button class="btn p">
+            <i class="fas fa-user-friends"></i> People
+          </button>
+
+          <button class="btn f"><i class="fas fa-file-alt"></i> Files</button>
+
+          <button class="btn c">
+            <i class="fa-solid fa-circle-nodes"></i> Channels
+          </button>
+        </div>
+
+        <div class="section people">
+          <h3>People</h3>
+          <table>
+            <tbody id="people"></tbody>
+          </table>
+        </div>
+
+        <!-- <div class="card-people">
+            <i class="fa-solid fa-user"></i>
+            <p>Olivia Niaos Jaknma</p>
+            <i class="icon fa-solid fa-circle"></i>
+            <span class="edo">Active Now</span>
+          </div> -->
+
+        <div class="section files">
+          <h3>Files</h3>
+          <table>
+            <tbody id="files"></tbody>
+          </table>
+        </div>
+
+        <div class="section canal">
+          <h3>Channels</h3>
+          <table>
+            <tbody id="channels"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="/js/script.js"></script>
+    <script src="/js/Api.js"></script>
+  </body>
+</html>
