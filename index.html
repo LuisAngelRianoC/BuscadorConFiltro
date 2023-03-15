@@ -20,6 +20,10 @@
     <div class="container">
       <div class="card-head">
         <input id="buscador" type="text" placeholder="Start Searching..." />
+        <button class="btn btn-info mb-2" id="boton"> Buscar</button>
+        <ul id="Resultado">
+         
+        </ul>
       </div>
 
       <!-- Contenedor -->
@@ -43,7 +47,12 @@
           </table>
         </div>
 
-
+        <!-- <div class="card-people">
+            <i class="fa-solid fa-user"></i>
+            <p>Olivia Niaos Jaknma</p>
+            <i class="icon fa-solid fa-circle"></i>
+            <span class="edo">Active Now</span>
+          </div> -->
 
         <div class="section files">
           <h3>Files</h3>
@@ -54,18 +63,14 @@
 
         <div class="section canal">
           <h3>Channels</h3>
-            <div class="card-channels">            
-              <table>
-                <tbody id="channels"></tbody>
-              </table>
-          </div>
+          <table>
+            <tbody id="channels"></tbody>
+          </table>
+        </div>
       </div>
     </div>
-    <div class="iconos">
-      <i class="fondo fa-solid fa-circle"><i class="fondo1 fa-thin fa-hashtag"></i></i>
-    </div>
-    
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="/js/script.js"></script>
     <script src="/js/Api.js"></script>
   </body>
