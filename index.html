@@ -24,40 +24,37 @@
 
       <!-- Contenedor -->
       <div class="card-body">
-        <div class="section filtros">
-          <button class="btn p">
+
+        <div class=" filtros">
+          <button id="btnPeople" class="btn p">
             <i class="fas fa-user-friends"></i> People
           </button>
 
-          <button class="btn f"><i class="fas fa-file-alt"></i> Files</button>
+          <button id="btnFiles" class="btn f">
+            <i class="fas fa-file-alt"></i> Files
+          </button>
 
-          <button class="btn c">
+          <button id="btnChannels" class="btn c">
             <i class="fa-solid fa-circle-nodes"></i> Channels
           </button>
         </div>
 
-        <div class="section people">
+        <!-- Secciones  -->
+        <div id="peopleSection" class="section people">
           <h3>People</h3>
           <table>
             <tbody id="people"></tbody>
           </table>
         </div>
 
-        <!-- <div class="card-people">
-            <i class="fa-solid fa-user"></i>
-            <p>Olivia Niaos Jaknma</p>
-            <i class="icon fa-solid fa-circle"></i>
-            <span class="edo">Active Now</span>
-          </div> -->
-
-        <div class="section files">
+        <div id="filesSection" class="section files">
           <h3>Files</h3>
           <table>
             <tbody id="files"></tbody>
           </table>
         </div>
 
-        <div class="section canal">
+        <div id="channelsSection" class="section canal">
           <h3>Channels</h3>
           <table>
             <tbody id="channels"></tbody>
