@@ -121,14 +121,25 @@ h3{
 }
 
 .fa-hashtag{
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    background-color: #797474;
+    font-size: 15px;
 }
 
 .edo{
     font-size: 15px;
 }
 
+.iconos{
+    position: relative;
+    background: #b4b4b4;
+    width: 20px;
+}
+
+.fondo{
+    position: relative;
+    z-index: 100;
+}
+
+.fondo1{
+    position: absolute;
+    
+}
