@@ -1,30 +1,27 @@
 const productos =[ 
-    {nombre: ' luis angel',sesion: 3 minutos},
-    {nombre: ' giovanni',sesion: 5 minutos},
-    {nombre: ' javier',sesion: 15 minutos},
-    {nombre: ' Ericka',sesion: 30 minutos},
-   
-    ]
+    {nombre: ' p',sesion: '3 minutos'},
+    {nombre: ' giovanni',sesion: '5 minutos'},
+    {nombre: ' javier',sesion: '15 minutos'},
+    {nombre: ' Ericka',sesion: '30 minutos'},
+]
 
-const buscador=document.querySelector('#buscador');
-const boton =document.querySelector('#boton');
-const Resultado =document.querySelector('#Resultado')
-
-const filtrar = ()=>{
-    //console.log(buscador.value);
-Resultado.innerHTML = ´´;
-
-boton.addEventListener('click',filtrar)
-const texto = buscador.value.toLowerCase();
-for (let producto of productos){
-    let nombre = producto.nombre.toLowerCase();
-    if (nombre.indexOf(texto) !=-1){
-        Resultado.innerHTML +='
-        <li>${producto.nombre} - sesion:${producto.sesion} </li>
-
-    '
-
+$("#boton").on('click', function () {
     
-}
-    }
+    for (let producto of productos){
+        
+        var escribi = $("#buscador").val();
+        escribi = escribi.toLowerCase();
+        escribi = escribi.split(" ").join("");
 
+        var andoBuscando = producto.nombre;
+        andoBuscando = andoBuscando.toLowerCase();
+        andoBuscando = andoBuscando.split(" ").join("");
+
+        console.log(escribi + ' con ' + andoBuscando)
+
+        if(escribi == andoBuscando) {
+            console.log("lo encontre")
+            console.log(producto)
+        }
+    }
+})
