@@ -38,7 +38,7 @@ fetch(channels)
 const mostrarChannels = (data) => {
     let body = ''
     for (let i = 0; i < data.length; i++){
-        body += `<tr><td> </td><td>${data[i].nombre}</td><td>${data[i].miembros}</td></tr>`
+        body += `<tr> <td><div class="circulo"> <i class=" fa-solid fa-hashtag"></i></div></td> <td>${data[i].nombre}</td><td>${data[i].miembros}</td></tr>`
     }
     document.getElementById('channels').innerHTML = body
 }
