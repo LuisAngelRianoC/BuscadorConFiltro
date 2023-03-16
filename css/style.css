@@ -143,7 +143,12 @@ h3{
 
 table{
     margin-left: 30px;
+    /* display: table-row-group; */
 }
+
+/* tr:nth-child(n+4):nth-last-child(n) {
+    display: none;
+} */
 
 td{
     padding: 5px 5px;
@@ -166,4 +171,3 @@ hr{
 .ocultarSeccion{
     display: none;
 }
-

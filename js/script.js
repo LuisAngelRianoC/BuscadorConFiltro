@@ -9,6 +9,8 @@ let sectionChannels = document.getElementById('channelsSection');
 let hr = document.getElementById('hr')
 let hr2 = document.getElementById('hr2')
 
+let tabla = document.getElementsByClassName('tabla')
+
 let flag1 
 let flag2
 let flag3
@@ -78,6 +80,8 @@ function mostrarTodo() {
     btnPeople.classList.remove('p-activo')
     btnFiles.classList.remove('f-activo')
     btnChannels.classList.remove('c-activo')
+
+    
 
     mostrarHr()
 
