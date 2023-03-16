@@ -1,3 +1,18 @@
+let btnPeople = document.getElementById('btnPeople')
+let btnFiles = document.getElementById('btnFiles')
+let btnChannels = document.getElementById('btnChannels')
+
+let sectionPeople = document.getElementById('peopleSection');
+let sectionFiles = document.getElementById('filesSection');
+let sectionChannels = document.getElementById('channelsSection');
+
+let hr = document.getElementById('hr')
+let hr2 = document.getElementById('hr2')
+
+let flag1 
+let flag2
+let flag3
+
 const productos =[ 
     {nombre: ' p',sesion: '3 minutos'},
     {nombre: ' giovanni',sesion: '5 minutos'},
@@ -25,19 +40,6 @@ $("#boton").on('click', function () {
         }
     }
 })
-
-
-let btnPeople = document.getElementById('btnPeople')
-let btnFiles = document.getElementById('btnFiles')
-let btnChannels = document.getElementById('btnChannels')
-
-const sectionPeople = document.getElementById('peopleSection');
-let sectionFiles = document.getElementById('filesSection');
-let sectionChannels = document.getElementById('channelsSection');
-
-let flag1 
-let flag2
-let flag3
 
 btnPeople.addEventListener('click', () => {
 
@@ -77,6 +79,8 @@ function mostrarTodo() {
     btnFiles.classList.remove('f-activo')
     btnChannels.classList.remove('c-activo')
 
+    mostrarHr()
+
     flag1 = 0 
     flag2 = 0 
     flag3 = 0 
@@ -92,6 +96,8 @@ function mostrarP() {
     btnFiles.classList.remove('f-activo')
     btnChannels.classList.remove('c-activo')
 
+    ocultarHr()
+
     flag1 = 1
     flag2 = 0 
     flag3 = 0 
@@ -105,6 +111,8 @@ function mostrarF() {
     btnPeople.classList.remove('p-activo')
     btnFiles.classList.add('f-activo')
     btnChannels.classList.remove('c-activo')
+
+    ocultarHr()
 
     flag1 = 0
     flag2 = 1
@@ -120,8 +128,21 @@ function mostrarC() {
     btnPeople.classList.remove('p-activo')
     btnFiles.classList.remove('f-activo')
     btnChannels.classList.add('c-activo')
+
+    ocultarHr()
     
     flag1 = 0
     flag2 = 0
     flag3 = 1
+}
+
+
+function ocultarHr(){
+    hr.classList.add('hr-oculto')
+    hr2.classList.add('hr-oculto')
+}
+
+function mostrarHr(){
+    hr.classList.remove('hr-oculto')
+    hr2.classList.remove('hr-oculto')
 }

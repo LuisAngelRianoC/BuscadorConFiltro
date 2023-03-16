@@ -42,35 +42,30 @@ body {
     min-height: 100vh;
 }
 
-#buscador{
+.buscador{
     border-radius: 10px;
     padding: 12px;
     border: solid 1px #32c586;
     width: 600px;
 }
 
-
-
 .card-body{
     margin-top: 10px;
     padding: 5px;
     background: whitesmoke;
     border-radius: 10px;
-    box-shadow: 2px 2px 2px 2px  #d4d4d4ba;
     transition: all .5s;
 }
 
 .section{
-    padding: .5em;
-    display: inline;
-    justify-content: space-between;
+    padding: 20px 0;
 }
 
-
-
-.filter{
+.filtros{
     display: flex;
     justify-content: center;
+    padding-top: 20px;
+    justify-content: space-evenly;
 }
 
 .btn{
@@ -78,7 +73,7 @@ body {
     background-color: transparent;
     font-weight: 600;
     border-radius: 10px;
-    padding: 10px;
+    padding: 8px 20px;
     margin-left: 10px;
     border: 1px solid var(--text);
     font-size: 15px;
@@ -120,51 +115,48 @@ body {
 
 h3{
     margin-left: 15px;
-    font-size: 14px;
+    margin-bottom: 6px;
+    font-size: 16px;
     color: var(--text);
-}
-
-.icon{
-    font-size: 5px;
-    color: #b4b4b4;
-    justify-content: center;
-}
-
-.card-people{
-    display: flex;
-    justify-content: flex-start;
-}
-
-.card-people i{
-    padding: 0 5px;
 }
 
 .fa-hashtag{
     font-size: 15px;
 }
 
-.edo{
-    font-size: 15px;
-}
-
-.iconos{
-    position: relative;
-    background: #b4b4b4;
-    width: 20px;
-}
-
 .circulo {
-    background-color: #b9b9b9;
+    background-color: #e7e7e7;
     display: inline-block;
     border-radius: 50%;
-    padding: 2px 10px;
+    padding: 3px 10px;
     color: black;
-    border: 1px solid #868484;
     margin-right: 10px;
 }
 
-#channels tr td{
-    margin: 10px;
+.espacio{
+    background-color: #d4d4d4;
+    border-radius: 50%;
+    padding: 3px 3px;
+    color: black;
+    margin-right: 10px;
+}
+
+table{
+    margin-left: 30px;
+}
+
+td{
+    padding: 5px 5px;
+}
+
+hr{
+    display: block;
+    width: 80%;
+    margin-left: 70px;
+}
+
+.hr-oculto{
+    display: none;
 }
 
 .mostrarSeccion{

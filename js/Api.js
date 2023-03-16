@@ -8,7 +8,7 @@ fetch(people)
 const mostrarPeople = (data) => {
     let body = ''
     for (let i = 0; i < data.length; i++){
-        body += `<tr><td>${data[i].nombre}</td><td>${data[i].conexion}</td></tr>`
+        body += `<tr> <td><div class="circulo"> <i class="fa-regular fa-user"></i> </div></td> <td>${data[i].nombre}</td> <td><div class="espacio"></div></td> <td>${data[i].conexion}</td></tr>`
     }
     document.getElementById('people').innerHTML = body
 }
@@ -23,7 +23,7 @@ fetch(files)
 const mostrarFiles = (data) => {
     let body = ''
     for (let i = 0; i < data.length; i++){
-        body += `<tr> <td>${data[i].nombre}</td><td>${data[i].subido}</td></tr>`
+        body += `<tr> <td><div class="circulo"> <i class="fa-regular fa-file"></i></div></td> <td>${data[i].nombre}</td> <td><div class="espacio"></div></td> <td>${data[i].subido}</td></tr>`
     }
     document.getElementById('files').innerHTML = body
 }
@@ -38,7 +38,7 @@ fetch(channels)
 const mostrarChannels = (data) => {
     let body = ''
     for (let i = 0; i < data.length; i++){
-        body += `<tr> <td><div class="circulo"> <i class=" fa-solid fa-hashtag"></i></div></td> <td>${data[i].nombre}</td><td>${data[i].miembros}</td></tr>`
+        body += `<tr> <td><div class="circulo"> <i class=" fa-solid fa-hashtag"></i></div></td> <td>${data[i].nombre}</td> <td><div class="espacio"></div></td> <td>${data[i].miembros}</td></tr>`
     }
     document.getElementById('channels').innerHTML = body
 }

@@ -19,8 +19,9 @@
   <body>
     <div class="container">
       <div class="card-head">
-        <input id="buscador" type="text" placeholder="Start Searching..." />
-        <button class="btn btn-info mb-2" id="boton"> Buscar</button>
+        <input id="buscador" class="buscador" type="text" placeholder="Start Searching..." />
+
+        <button style="background-color: aliceblue;" class="btn btn-info mb-2" id="boton"> Buscar</button>
         <ul id="Resultado">
          
         </ul>
@@ -28,33 +29,38 @@
 
       <!-- Contenedor -->
       <div class="card-body">
-        <div class="section filtros">
-          <button class="btn p">
+        <div class="filtros">
+          <button id="btnPeople" class="btn p">
             <i class="fas fa-user-friends"></i> People
           </button>
 
-          <button class="btn f"><i class="fas fa-file-alt"></i> Files</button>
+          <button id="btnFiles" class="btn f"><i class="fas fa-file-alt"></i> Files</button>
 
-          <button class="btn c">
+          <button id="btnChannels" class="btn c">
             <i class="fa-solid fa-circle-nodes"></i> Channels
           </button>
         </div>
 
-        <div class="section people">
+        <div id="peopleSection" class="section people">
           <h3>People</h3>
           <table>
             <tbody id="people"></tbody>
           </table>
         </div>
 
-        <div class="section files">
+        <hr id="hr">
+
+        <div id="filesSection" class="section files">
           <h3>Files</h3>
           <table>
             <tbody id="files"></tbody>
           </table>
         </div>
+        <div></div>
 
-        <div class="section canal">
+        <hr id="hr2">
+
+        <div id="channelsSection" class="section canal">
           <h3>Channels</h3>
           <table>
             <tbody id="channels"></tbody>
