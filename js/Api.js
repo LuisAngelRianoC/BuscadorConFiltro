@@ -15,7 +15,7 @@ const mostrarPeople = (data) => {
     }
     document.getElementById('people').innerHTML = body
 }
-
+//UncomentariodepruebaGIO
 // Obtencion de los datos de Files
 let files = 'http://localhost:3001/Files'
 fetch(files)
