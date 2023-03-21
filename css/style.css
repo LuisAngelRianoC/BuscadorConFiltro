@@ -136,22 +136,32 @@ h3{
     margin-right: 10px;
 }
 
+.registro{
+    display: flex;
+}
+
 .espacio{
     background-color: #d4d4d4;
     border-radius: 50%;
     padding: 3px 3px;
     color: black;
-    margin-right: 10px;
+    margin: 11px 6px;
+    width: 3px;
+    height: 3px;
 }
 
 table{
     margin-left: 30px;
-    /* display: table-row-group; */
+    display: table-row-group; 
 }
 
-/* tr:nth-child(n+4):nth-last-child(n) {
+.edoConexion{
+    color: #2bca2b;
+}
+
+.hideRegister tr:nth-child(n+4):nth-last-child(n) {
     display: none;
-} */
+}
 
 td{
     padding: 5px 5px;
