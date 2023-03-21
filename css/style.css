@@ -11,7 +11,7 @@
 
 :root {
     --textMenu: black;
-    --bgcolor: #cff5e5;
+    --bgcolor: #c7ded5;
     
     --status: #59c28c;
 
@@ -73,12 +73,15 @@ body {
     background-color: transparent;
     font-weight: 600;
     border-radius: 10px;
-    padding: 8px 20px;
+    padding: 5px 20px;
     margin-left: 10px;
     border: 1px solid var(--text);
     font-size: 15px;
 }
 
+i{
+    font-size: 14px;
+}
 
 .p-activo{
     color: var(--people);
@@ -156,8 +159,11 @@ td{
 
 hr{
     display: block;
-    width: 80%;
-    margin-left: 70px;
+    margin: auto;
+    width: 90%;
+    height: 4px;
+    background-color: #cecece6c;
+    border: none;
 }
 
 .hr-oculto{
@@ -170,4 +176,8 @@ hr{
 
 .ocultarSeccion{
     display: none;
+}
+
+.activo{
+    color: greenyellow;
 }
