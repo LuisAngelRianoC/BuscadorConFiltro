@@ -6,6 +6,10 @@ let sectionPeople = document.getElementById('peopleSection');
 let sectionFiles = document.getElementById('filesSection');
 let sectionChannels = document.getElementById('channelsSection');
 
+let tbodyP = document.getElementById('people')
+let tbodyF = document.getElementById('files')
+let tbodyC = document.getElementById('channels')
+
 let hr = document.getElementById('hr')
 let hr2 = document.getElementById('hr2')
 
@@ -81,8 +85,7 @@ function mostrarTodo() {
     btnFiles.classList.remove('f-activo')
     btnChannels.classList.remove('c-activo')
 
-    
-
+    hideRegister()
     mostrarHr()
 
     flag1 = 0 
@@ -100,6 +103,7 @@ function mostrarP() {
     btnFiles.classList.remove('f-activo')
     btnChannels.classList.remove('c-activo')
 
+    showRegister()
     ocultarHr()
 
     flag1 = 1
@@ -116,6 +120,7 @@ function mostrarF() {
     btnFiles.classList.add('f-activo')
     btnChannels.classList.remove('c-activo')
 
+    showRegister()
     ocultarHr()
 
     flag1 = 0
@@ -133,6 +138,7 @@ function mostrarC() {
     btnFiles.classList.remove('f-activo')
     btnChannels.classList.add('c-activo')
 
+    showRegister()
     ocultarHr()
     
     flag1 = 0
@@ -149,4 +155,16 @@ function ocultarHr(){
 function mostrarHr(){
     hr.classList.remove('hr-oculto')
     hr2.classList.remove('hr-oculto')
+}
+
+function showRegister() {
+    tbodyP.classList.remove('hideRegister')
+    tbodyF.classList.remove('hideRegister')
+    tbodyC.classList.remove('hideRegister')
+}
+
+function hideRegister() {
+    tbodyP.classList.add('hideRegister')
+    tbodyF.classList.add('hideRegister')
+    tbodyC.classList.add('hideRegister')
 }

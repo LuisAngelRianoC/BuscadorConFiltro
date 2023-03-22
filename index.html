@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/style.css" />
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
@@ -20,8 +19,6 @@
     <div class="container">
       <div class="card-head">
         <input id="buscador" class="buscador" type="text" placeholder="Start Searching..." />
-
-        
       </div>
 
       <!-- Contenedor -->
@@ -41,7 +38,7 @@
         <div id="peopleSection" class="section people">
           <h3>People</h3>
           <table class="tabla">
-            <tbody id="people"></tbody>
+            <tbody class="hideRegister" id="people"></tbody>
           </table>
         </div>
 
@@ -50,7 +47,7 @@
         <div id="filesSection" class="section files">
           <h3>Files</h3>
           <table>
-            <tbody id="files"></tbody>
+            <tbody class="hideRegister" id="files"></tbody>
           </table>
         </div>
         <div></div>
@@ -60,7 +57,7 @@
         <div id="channelsSection" class="section canal">
           <h3>Channels</h3>
           <table>
-            <tbody id="channels"></tbody>
+            <tbody class="hideRegister" id="channels"></tbody>
           </table>
         </div>
        
@@ -68,7 +65,7 @@
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <script src="/js/script.js"></script>
     <script src="/js/Api.js"></script>
+    <script src="/js/script.js"></script>
   </body>
 </html>
