@@ -184,8 +184,8 @@ td {
 hr {
     display: block;
     margin: auto;
-    width: 90%;
-    height: 4px;
+    width: 95%;
+    height: 2px;
     background-color: #cecece6c;
     border: none;
 }
