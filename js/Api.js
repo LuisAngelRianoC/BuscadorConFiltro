@@ -11,7 +11,7 @@ const mostrarPeople = (data) => {
     for (let i = 0; i < data.length; i++) {
         body += `
                 <tr> 
-                    <td><div class="circulo"> <i class="fas fa-user"></i> </div></td> 
+                    <td> <div class="circulo"> <img src="${data[i].foto}"></div> </td> 
                     <td class="registro">${data[i].nombre} <div class="espacio"></div> <div id="statusP${i+1}">${data[i].conexion} </div> </td> 
                 </tr>
             `;
@@ -20,7 +20,8 @@ const mostrarPeople = (data) => {
     document.getElementById('people').innerHTML = body
     validStatusCard(data);
 }
-//UncomentariodepruebaGIO
+
+
 // Obtencion de los datos de Files
 let files = 'http://localhost:3001/Files'
 fetch(files)
@@ -34,7 +35,7 @@ const mostrarFiles = (data) => {
     for (let i = 0; i < data.length; i++) {
         body += `
         <tr> 
-        <td><div class="circulo"> <i class="fa-regular fa-file"></i> </div></td> 
+        <td> <div class="circulo"> <img src="${data[i].icono}"></div </td> 
         <td class="registro">${data[i].nombre} <div class="espacio"></div> <div id="statusF${i+1}"> ${data[i].subido} </div> </td> 
         </tr>`
     }

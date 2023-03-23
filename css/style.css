@@ -12,17 +12,17 @@
 :root {
     --textMenu: black;
     --bgcolor: #c7ded5;
-    
+
     --status: #59c28c;
 
     --people: #32c586;
     --bgpeople: #e0fcf0d0;
 
-    --files:#2B82CA;
-    --bgfiles:#e3f1fe;
+    --files: #2B82CA;
+    --bgfiles: #e3f1fe;
 
-    --channels:#613AD1;
-    --bgchannels:#e0d7fa;
+    --channels: #613AD1;
+    --bgchannels: #e0d7fa;
 
     --text: #b4b4b4;
 }
@@ -42,14 +42,14 @@ body {
     min-height: 100vh;
 }
 
-.buscador{
+.buscador {
     border-radius: 10px;
     padding: 12px;
     border: solid 1px #32c586;
     width: 600px;
 }
 
-.card-body{
+.card-body {
     margin-top: 10px;
     padding: 5px;
     background: whitesmoke;
@@ -57,18 +57,18 @@ body {
     transition: all .5s;
 }
 
-.section{
+.section {
     padding: 20px 0;
 }
 
-.filtros{
+.filtros {
     display: flex;
     justify-content: center;
     padding-top: 20px;
     justify-content: space-evenly;
 }
 
-.btn{
+.btn {
     color: #494949;
     background-color: transparent;
     font-weight: 600;
@@ -79,68 +79,81 @@ body {
     font-size: 15px;
 }
 
-i{
+i {
     font-size: 14px;
 }
 
-.p-activo{
+.p-activo {
     color: var(--people);
     background-color: var(--bgpeople);
     border: 2px solid;
 }
 
-.f-activo{
+.f-activo {
     color: var(--files);
     background-color: var(--bgfiles);
     border: 2px solid;
 }
 
-.c-activo{
+.c-activo {
     color: var(--channels);
     background-color: var(--bgchannels);
     border: 2px solid;
 }
 
-.p:hover{
+.p:hover {
     color: var(--people);
     background-color: var(--bgpeople);
 }
 
-.f:hover{
+.f:hover {
     color: var(--files);
     background-color: var(--bgfiles);
 }
 
-.c:hover{
+.c:hover {
     color: var(--channels);
     background-color: var(--bgchannels);
 }
 
-h3{
+h3 {
     margin-left: 15px;
     margin-bottom: 6px;
     font-size: 16px;
     color: var(--text);
 }
 
-.fa-hashtag{
+.fa-hashtag {
     font-size: 15px;
+    padding: 9px 13px;
 }
 
 .circulo {
+    height: 40px;
+    width: 40px;
     background-color: #e7e7e7;
-    display: inline-block;
+    display: flex;
     border-radius: 50%;
-    padding: 3px 10px;
+   
     color: black;
     margin-right: 10px;
 }
 
-.registro{
-    display: flex;
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    margin: 0;
+    object-fit: contain;
 }
 
-.espacio{
+.registro {
+    display: flex;
+    height: 48px;
+    align-items: center;
+}
+
+.espacio {
     background-color: #d4d4d4;
     border-radius: 50%;
     padding: 3px 3px;
@@ -150,12 +163,12 @@ h3{
     height: 3px;
 }
 
-table{
+table {
     margin-left: 30px;
-    display: table-row-group; 
+    display: table-row-group;
 }
 
-.edoConexion{
+.edoConexion {
     color: #2bca2b;
 }
 
@@ -163,11 +176,12 @@ table{
     display: none;
 }
 
-td{
+td {
     padding: 5px 5px;
+
 }
 
-hr{
+hr {
     display: block;
     margin: auto;
     width: 90%;
@@ -176,18 +190,18 @@ hr{
     border: none;
 }
 
-.hr-oculto{
+.hr-oculto {
     display: none;
 }
 
-.mostrarSeccion{
+.mostrarSeccion {
     display: block;
 }
 
-.ocultarSeccion{
+.ocultarSeccion {
     display: none;
 }
 
-.activo{
+.activo {
     color: greenyellow;
 }
