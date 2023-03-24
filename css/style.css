@@ -144,7 +144,8 @@ img {
     height: 100%;
     border-radius: 50%;
     margin: 0;
-    object-fit: contain;
+    object-fit: cover;
+   
 }
 
 .registro {
