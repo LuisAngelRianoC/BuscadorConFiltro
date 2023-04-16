@@ -40,8 +40,6 @@ const mostrarFiles = (data) => {
         </tr>`
     }
     document.getElementById('files').innerHTML = body
-    validStatusCardF(data)
-    
 }
 
 // Obtencion de los datos de Channels
@@ -64,6 +62,7 @@ const mostrarChannels = (data) => {
     document.getElementById('channels').innerHTML = body
 }
 
+// validacion de status 
 function validStatusCard(data){
     for (let i = 0; i < data.length; i++) {
         let edoconp = document.getElementById(`statusP${i+1}`);
@@ -77,16 +76,3 @@ function validStatusCard(data){
     }
 }
 
-function validStatusCardF(data){
-    for (let i = 0; i < data.length; i++) {
-        let edoconf = document.getElementById(`statusF${i+1}`);
-
-            let dato = `${data[i].status}`
-            
-            if (dato == 1) {
-                edoconf.classList.add("edoConexion");
-            } else {
-                edoconf.classList.remove('edoConexion')
-            }
-    }
-}
