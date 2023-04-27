@@ -1,32 +1,15 @@
- 
-stages: # List of stages for jobs, and their order of execution
-  - build
-  - test
-  - deploy 
-  - prueba 
-
-build-job: # This job runs in the build stage, which runs first.
-  stage: build
+test_job_1:
   script:
-    - echo "Compiling the code..."
-    - echo "Compile complete."
+    - echo "Run a script that results in exit code 1. This job fails."
+    - exit 1
+  allow_failure:
+    exit_codes: 137
 
-unit-test-job: # This job runs in the test stage.
-  stage: prueba # It only starts when the job in the build stage completes successfully.
+test_job_2:
   script:
-    - echo "Hola"
-    - date 
-
-lint-test-job: # This job also runs in the test stage.
-  stage: test # It can run at the same time as unit-test-job (in parallel).
-  script:
-    - echo "Linting code... This will take about 10 seconds."
-    - sleep 10
-    - echo "No lint issues found."
-
-deploy-job: # This job runs in the deploy stage.
-  stage: deploy # It only runs when *both* jobs in the test stage complete successfully.
-  environment: production
-  script:
-    - echo "Deploying application..."
-    - echo "Application successfully deployed."
+    - echo "Run a script that results in exit code 137. This job is allowed to fail."
+    - exit 137
+  allow_failure:
+    exit_codes:
+      - 137
+      - 255
