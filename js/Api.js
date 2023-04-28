@@ -1,5 +1,5 @@
 
-let people = 'http://localhost:3001/People'
+let people = 'https://644c2ed817e2663b9d020061.mockapi.io/buscador/People'
 fetch(people)
     .then(response => response.json())
     .then(data => mostrarPeople(data))
@@ -23,7 +23,7 @@ const mostrarPeople = (data) => {
 
 
 // Obtencion de los datos de Files
-let files = 'http://localhost:3001/Files'
+let files = 'https://644c2ed817e2663b9d020061.mockapi.io/buscador/Files'
 fetch(files)
     .then(response => response.json())
     .then(data => mostrarFiles(data))

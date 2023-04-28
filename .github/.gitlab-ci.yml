@@ -1,17 +1,23 @@
+before_script:
+  - npm install
+
 stages:
   - build
   - test
   - deploy
 
 build:
-  stage: build
-  script:
-    - echo "Construyendo el proyecto"
+  image: node:12-alpine
+  stage: build 
+  script: 
+    - npm install
+
 
 test:
+  image: node:12-alpine
   stage: test
   script:
-    - echo "Ejecutando pruebas automatizadas"
+    - npm run test
 
 deploy:
   stage: deploy
