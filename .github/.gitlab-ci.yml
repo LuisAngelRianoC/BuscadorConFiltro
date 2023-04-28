@@ -20,6 +20,7 @@ test:
     - npm test
 
 deploy:
+  image: node:18.15
   stage: deploy
   script:
     - echo "Desplegando el proyecto en producción"
