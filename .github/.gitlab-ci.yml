@@ -19,8 +19,14 @@ test:
   script:
     - npm test
 
-deploy:
+heroku:
   image: node:18.15
   stage: deploy
+  only:
+    - main
+
   script:
-    - echo "Desplegando el proyecto en producción"
+    - apt-get update -qy
+    - apt-get install -y ruby
+    - gem install dpl
+    - dpl --provider=heroku --app=$HEROKU_APP --api-key=$HEROKU_API_KEY
