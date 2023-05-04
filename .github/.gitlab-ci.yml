@@ -1,6 +1,7 @@
 before_script:
   - npm install
 
+
 stages:
   - build
   - test
@@ -19,14 +20,23 @@ test:
   script:
     - npm test
 
-heroku:
+deploy:
   image: node:18.15
   stage: deploy
   only:
     - main
 
   script:
-    - apt-get update -qy
-    - apt-get install -y ruby
-    - gem install dpl
-    - dpl --provider=heroku --app=$HEROKU_APP --api-key=$HEROKU_API_KEY
+      - apt-get update -qy
+      - apt-get install -y ruby:latest
+      - gem install dpl
+      - dpl --provider=heroku --app=$HEROKU_APP_NAME --api-key=$HEROKU_API_KEY
+
+# deploy:
+#   stage: deploy
+#   script:
+#     - apt-get update -qy
+#     - apt-get install -y sshpass
+#     - sshpass -e ssh -o StrictHostKeyChecking=no $HEROKU_USERNAME@$HEROKU_HOSTNAME "cd $HEROKU_APP_NAME && git pull origin main && npm install && npm run build && heroku restart"
+#   only:
+#     - main
